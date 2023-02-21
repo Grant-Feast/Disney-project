@@ -4,8 +4,13 @@
   <title>Disney</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/b1b83d9395.js" crossorigin="anonymous"></script>
+  <!-- Slick Style sheets -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <body>
     <!-- Header container -->
     <section id="header-section">
@@ -38,7 +43,35 @@
     </section>
     <!-- End of header container -->
 
-    <!-- Slick Carroselle -->
+    <!-- Slick Carouselle -->
+    <!-- <section id="main-carouselle">
+      <div class="slider-hero">
+        <div class="hero-img">
+            <img src="images/slide-img1.png" />
+            <div class="overlay">
+              <img class="overlay-img" src="images/star-wars-vector.png" alt="Star Wars">
+              <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+              <a href="#" class="purchase-btn">PURCHASE</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/slide-img1.png" />
+            <div class="overlay">
+              <img class="overlay-img iron-man-logo" src="images/star-wars-vector.png" alt="Star Wars">
+              <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+              <a href="#" class="purchase-btn">PURCHASE</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/slide-img1.png" />
+            <div class="overlay">
+              <img class="overlay-img iron-man-logo" src="images/star-wars-vector.png" alt="Star Wars">
+              <h3 class="overlay-header">Available Now to Rent or Buy</h3>
+              <a href="#" class="purchase-btn">PURCHASE</a>
+            </div>
+        </div>
+      </div>
+    </section> -->
     <!-- End of slick Carouselle -->
 
     <!-- Intro section -->
@@ -194,5 +227,26 @@
     <!-- End of footer -->
 
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+      // Main carouselle
+      $(document).ready(function(){
+        $('.slider-hero').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: true,
+          infinite: true,
+          fade: true,
+          speed: 500,
+          cssEase: 'linear',
+          autoplaySpeed: 3000,
+        });
+      }); 
+
+    </script>
   </body>
 </html>

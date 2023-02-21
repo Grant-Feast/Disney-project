@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 .user-btn {
-  margin-left: 37%;
+  margin-left: 35%;
   margin-top: .5%;
   color: #ffffff;
   text-decoration: none;
@@ -74,13 +74,13 @@ nav ul li a {
 #intro-section {
   min-height: 285px;
   text-align: center;
-  padding-top: 60px;
 }
 
 .intro-container {
   max-width: 920px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 
 #intro-section h2 {
@@ -182,6 +182,7 @@ nav ul li a {
   max-width: 1345px;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .img-block {
@@ -303,4 +304,12 @@ footer {
 .copyright a {
   text-decoration: none;
   color: #a7a7a7;
+}
+
+/* Media Quiries */
+
+@media only screen and (max-width: 1378px) {
+  header .logo {
+    height: 50px;
+  }
 }
